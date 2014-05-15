@@ -28,10 +28,10 @@
 
 @synthesize name, email;
 
--(void) setName: (NSString*) name andEmail: (NSString*) email
+-(void) setName: (NSString*) theName andEmail: (NSString*) theEmail
 {
-    self.name = name;
-    self.email = email;
+    name = theName;
+    email = theEmail;
 }
 
 -(void) print
