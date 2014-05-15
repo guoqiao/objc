@@ -10,6 +10,15 @@ int main(int argc, const char * argv[])
         for(NSString* k in d){
             NSLog(@"%@: %@", k, d[k]);
         }
+
+        NSDictionary* x = @{
+            @"a":@"aaaaa",
+            @"b":@"bbbbb",
+            @"c":@"ccccc",
+        };
+        for(NSString* k in x){
+            NSLog(@"%@: %@", k, x[k]);
+        }
     }
     return 0;
 }
