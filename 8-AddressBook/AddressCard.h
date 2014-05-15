@@ -9,4 +9,3 @@
 -(void) setName: (NSString*) name andEmail: (NSString*) email;
 -(void) print;
 @end
-
