@@ -40,4 +40,16 @@
     NSLog(@"=====================================");
 }
 
+-(AddressCard*) lookup: (NSString*) theName
+{
+    for(AddressCard* c in book)
+    {
+        BOOL b = [c.name caseInsensitiveCompare: theName] == NSOrderedSame;
+        if(b)
+        {
+            return c;
+        }
+    }
+    return nil;
+}
 @end

@@ -9,4 +9,5 @@
 -(void) addCard: (AddressCard*) theCard;
 -(NSUInteger) count;
 -(void) list;
+-(AddressCard*) lookup: (NSString*) theName;
 @end

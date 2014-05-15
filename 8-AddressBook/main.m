@@ -23,7 +23,13 @@ int main(int argc, const char * argv[])
         c.email = @"dan@gmail.com";
         [b addCard: c];
 
-        [b list];
+        //[b list];
+        c = [b lookup: @"Joe1"];
+        if(c != nil){
+            [c print];
+        } else {
+            NSLog(@"Not found!");
+        }
     }
     return 0;
 }
