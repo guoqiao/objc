@@ -10,5 +10,6 @@
 -(void) removeCard: (AddressCard*) theCard;
 -(NSUInteger) count;
 -(void) list;
+-(void) sort;
 -(AddressCard*) lookup: (NSString*) theName;
 @end

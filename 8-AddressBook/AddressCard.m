@@ -35,6 +35,11 @@
     return b1 && b2;
 }
 
+-(NSComparisonResult) compareNames: (id) e
+{
+    return [name compare: [e name]];
+}
+
 -(void) setName: (NSString*) theName andEmail: (NSString*) theEmail
 {
     name = theName;

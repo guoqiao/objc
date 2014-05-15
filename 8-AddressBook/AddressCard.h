@@ -7,5 +7,6 @@
 //-(NSString*) email;
 @property (copy, nonatomic) NSString* name, *email;
 -(void) setName: (NSString*) name andEmail: (NSString*) email;
+-(NSComparisonResult) compareNames: (id) e;
 -(void) print;
 @end

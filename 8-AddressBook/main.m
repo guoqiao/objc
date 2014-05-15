@@ -25,6 +25,8 @@ int main(int argc, const char * argv[])
         [b addCard: c];
 
         [b list];
+        [b sort];
+        [b list];
         c = [b lookup: @"Joe"];
         if(c != nil){
             [c print];

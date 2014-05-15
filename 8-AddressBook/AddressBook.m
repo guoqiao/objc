@@ -45,6 +45,11 @@
     NSLog(@"=====================================");
 }
 
+-(void) sort
+{
+    [book sortUsingSelector: @selector(compareNames:)];
+}
+
 -(AddressCard*) lookup: (NSString*) theName
 {
     for(AddressCard* c in book)
