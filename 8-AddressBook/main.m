@@ -12,6 +12,7 @@ int main(int argc, const char * argv[])
         c.name = @"joe";
         c.email = @"guoqiao@gmail.com";
         [b addCard: c];
+        [b addCard: c];
 
         c = [AddressCard new];
         c.name = @"james";
@@ -23,10 +24,12 @@ int main(int argc, const char * argv[])
         c.email = @"dan@gmail.com";
         [b addCard: c];
 
-        //[b list];
-        c = [b lookup: @"Joe1"];
+        [b list];
+        c = [b lookup: @"Joe"];
         if(c != nil){
             [c print];
+            [b removeCard: c];
+            [b list];
         } else {
             NSLog(@"Not found!");
         }

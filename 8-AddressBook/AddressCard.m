@@ -28,6 +28,13 @@
 
 @synthesize name, email;
 
+-(BOOL) isEqual: (AddressCard*) theCard
+{
+    BOOL b1 = [name isEqualToString: theCard.name] == YES;
+    BOOL b2 = [email isEqualToString: theCard.email] == YES;
+    return b1 && b2;
+}
+
 -(void) setName: (NSString*) theName andEmail: (NSString*) theEmail
 {
     name = theName;
