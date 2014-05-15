@@ -25,6 +25,11 @@
     [book addObject: theCard];
 }
 
+-(void) removeCard: (AddressCard*) theCard
+{
+    [book removeObjectIdenticalTo: theCard];
+}
+
 -(NSUInteger) count
 {
     return [book count];

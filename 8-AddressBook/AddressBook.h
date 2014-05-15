@@ -7,6 +7,7 @@
 
 -(instancetype) initWithName: (NSString*) name;
 -(void) addCard: (AddressCard*) theCard;
+-(void) removeCard: (AddressCard*) theCard;
 -(NSUInteger) count;
 -(void) list;
 -(AddressCard*) lookup: (NSString*) theName;
