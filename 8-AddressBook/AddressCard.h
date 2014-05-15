@@ -6,6 +6,7 @@
 //-(NSString*) name;
 //-(NSString*) email;
 @property (copy, nonatomic) NSString* name, *email;
+-(void) setName: (NSString*) name andEmail: (NSString*) email;
 -(void) print;
 @end
 

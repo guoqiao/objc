@@ -28,6 +28,12 @@
 
 @synthesize name, email;
 
+-(void) setName: (NSString*) name andEmail: (NSString*) email
+{
+    self.name = name;
+    self.email = email;
+}
+
 -(void) print
 {
     NSLog(@"==============================");

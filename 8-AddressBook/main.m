@@ -8,8 +8,9 @@ int main(int argc, const char * argv[])
         AddressCard* c = [AddressCard new];
         //[c setName: name];
         //[c setEmail: email];
-        c.name = name;
-        c.email = email;
+        //c.name = name;
+        //c.email = email;
+        [c setName: name andEmail: email];
         [c print];
     }
     return 0;
